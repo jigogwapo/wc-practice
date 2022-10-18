@@ -4,8 +4,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Lit Starter Kit</title>
+    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="./node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="./components/my-element.js"></script>
+    <script type="module" src="./components/Player/Player.js"></script>
+    <style>
+      p {
+        border: solid 1px blue;
+        padding: 8px;
+      }
+    </style>
   </head>
   <body>
-    <a href="/dev/index.html">Component Demo</a>
+    <!-- <my-element>
+      <p>This is child content</p>
+    </my-element> -->
+    <player-elem name="Player 1" is-up-player glow win></player-elem>
+    <player-elem name="Player 2" glow win></player-elem>
   </body>
 </html>
